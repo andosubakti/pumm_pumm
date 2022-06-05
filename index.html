@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Test Page</title>
+</head>
+
+<body>
+    <div class="logo">
+        <div class="logo__wrapper--desktop">
+            <img src="img/logo.png" alt="company-logo">
+        </div>
+    </div>
+    <div class="top-menu">
+        <div class="top-menu__nav-wrapper">
+            <div class="top-menu__nav-item top-menu__nav-item--selected">Shop</div>
+            <div class="top-menu__nav-item">Our process</div>
+            <div class="top-menu__nav-item">About</div>
+            <div class="top-menu__nav-item">Support</div>
+        </div>
+        <div class="top-menu__logo--mobile">
+            <img src="img/logo.png" alt="company-logo">
+        </div>
+        <div class="top-menu__tools">
+            <img src="assets/tools.svg" alt="tools-assets">
+        </div>
+    </div>
+    <div class="bottom-menu">
+        <div class="bottom-menu__nav-wrapper">
+            <div class="bottom-menu__nav-item bottom-menu__nav-item--selected">
+                <img src="assets/shop.svg" alt="shop-icon" width="24px">
+                Shop
+            </div>
+            <div class="bottom-menu__nav-item">
+                <img src="assets/process.svg" alt="process-icon" width="24px">
+                Our Process
+            </div>
+            <div class="bottom-menu__nav-item">
+                <img src="assets/about.svg" alt="about-icon" width="24px">
+                About
+            </div>
+            <div class="bottom-menu__nav-item ">
+                <img src="assets/support.svg" alt="support-icon" width="24px">
+                Support
+            </div>
+        </div>
+    </div>
+    <div class="section-1">
+        <div class="section-1__item">
+            <img src="img/image-1.png" alt="test-image-1" width="100%">
+        </div>
+        <div class="section-1__item">
+            <img src="img/image-2.png" alt="test-image-2" width="100%">
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="section-2__box-wrapper">
+            <h3>A modern generation of sofa. <br />
+                Lorem ipsum dolor sit amet.</h3>
+            <div class="btn-primary section-2__button">saber más</div>
+        </div>
+        <div class="section-2__card-wrapper">
+            <div class="section-2__card-item">
+                <img src="assets/email.svg" alt="icon-email">
+                <div class="section-2__card-detail">
+                    <div class="section-2__card-title">Entrega en 24 h en tu casa</div>
+                    <div class="section-2__card-text">El sofá en caja que cabe en tu ascensor.</div>
+                </div>
+            </div>
+            <div class="section-2__card-item">
+                <img src="assets/cloud.svg" alt="icon-cloud">
+                <div class="section-2__card-detail">
+                    <div class="section-2__card-title">Pruébalo 100 días</div>
+                    <div class="section-2__card-text">Vamos a tu casa a recogerlo. </div>
+                </div>
+            </div>
+            <div class="section-2__card-item">
+                <img src="assets/design.svg" alt="icon-design">
+                <div class="section-2__card-detail">
+                    <div class="section-2__card-title">Fácil de montar</div>
+                    <div class="section-2__card-text">No tools needed !</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <h2>3 módulos. Infinitas posibilidades.</h2>
+        <div class="section-3__banner">
+            <div class="section-3__banner--addons">
+                <img src="assets/subtract.svg" alt="icon-subtract">
+            </div>
+            <img src="img/image-3.png" alt="crisp-banner" width="100%">
+            <div class="section-3__rating">
+                <div class="section-3__rating--row">
+                    <div class="section-3__rating--name text-normal-bold">
+                        Excellent
+                    </div>
+                    <div class="section-3__rating--stars">
+                        <img src="assets/5-stars.svg" alt="5 stars">
+                    </div>
+                    <div class="section-3__rating--value text-normal-bold">
+                        4.9
+                    </div>
+                    <div class="section-3__rating--range text-normal">
+                        out of 5
+                    </div>
+                </div>
+                <div class="section-3__rating--row">
+                    <div class="section-3__rating--count text-normal-bold">
+                        123
+                    </div>
+                    <div class="text-normal">
+                        reviewers on
+                    </div>
+                    <div class="section-3__rating--author text-normal-bold">
+                        <img src="assets/star.svg" alt="star-icon">
+                        Trustpilot
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-4">
+        <h2 class="section-4__heading">Construye tu sofá perfecto. Modifícalo como quieras. Empieza con...</h2>
+        <div class="section-4__product-container">
+            <div class="section-4__controller">
+                <div class="section-4__controller--color-picker">
+                    Elige tu color
+                    <div class="section-4__controller-color-list">
+                        <div class="section-4__controller-color-item--selected green-forest" id="green"
+                            onclick="return greenClickHandler()">
+                            <div class="section-4__controller-color-item--detail">
+                                Green Forest
+                                <img class="triangle-svg" src="assets/triangle.svg" alt="triangle-svg">
+                            </div>
+                        </div>
+                        <div class="section-4__controller-color-item blue" id="blue"
+                            onclick="return blueClickHandler()">
+                            <div class="section-4__controller-color-item--detail">
+                                Blue
+                                <img class="triangle-svg" src="assets/triangle.svg" alt="triangle-svg">
+                            </div>
+                        </div>
+                        <div class="section-4__controller-color-item mariona" id="mariona"
+                            onclick="return marionaClickHandler()">
+                            <div class="section-4__controller-color-item--detail">
+                                Mariona
+                                <img class="triangle-svg" src="assets/triangle.svg" alt="triangle-svg">
+                            </div>
+                        </div>
+                        <div class="section-4__controller-color-item gray" id="gray"
+                            onclick="return grayClickHandler()">
+                            <div class="section-4__controller-color-item--detail">
+                                Gray
+                                <img class="triangle-svg" src="assets/triangle.svg" alt="triangle-svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-primary section-4__button">
+                    Compra ahora
+                </div>
+            </div>
+            <div class="section-4__product-box">
+                <div class="section-4__row">
+                    <div class="section-4__column">
+                        <div class="section-4__row">
+                            <div class="section-4__box--small">
+                                <img src="img/green-product-1.svg" alt="product-1-green" id="product-1">
+                                <div class="section-4__tags-container">
+                                    <div class="section-4__tag">
+                                        3 Seater sofa
+                                    </div>
+                                    <div class="section-4__tag--price">
+                                        Desde 2500€
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__box--small">
+                                <img src="img/green-product-2.svg" alt="product-2-green" id="product-2">
+                                <div class="section-4__tags-container">
+                                    <div class="section-4__tag">
+                                        Single sofa
+                                    </div>
+                                    <div class="section-4__tag--price">
+                                        Desde 1500€
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-4__row">
+                            <div class="section-4__box--small">
+                                <img src="img/green-product-3.svg" alt="product-3-green" id="product-3">
+                                <div class="section-4__tags-container">
+                                    <div class="section-4__tag">
+                                        2 Seater sofa
+                                    </div>
+                                    <div class="section-4__tag--price">
+                                        Desde 2500€
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-4__box--small">
+                                <img src="img/green-product-4.svg" alt="product-4-green" id="product-4">
+                                <div class="section-4__tags-container">
+                                    <div class="section-4__tag">
+                                        3 Seater sofa
+                                    </div>
+                                    <div class="section-4__tag--price">
+                                        Desde 2500€
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-4__column">
+                        <div class="section-4__box--large">
+                            <img class="image-lg" src="img/green-product-5.svg" alt="product-5-green" id="product-5">
+                            <div class="section-4__tags-container">
+                                <div class="section-4__tag">
+                                    3 Seater sofa
+                                </div>
+                                <div class="section-4__tag--price">
+                                    Desde 2500€
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-5">
+        <div class="section-5__container">
+            <img src="img/image-4.png" alt="image-4" width="100%">
+            <div class="section-5__marquee">
+                <h1 class="section-5__marquee--text-white">Modular. Dynamic. Comfy. Modular. Dynamic. Comfy.Modular.
+                    Dynamic. Comfy. Modular. Dynamic. Comfy.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="section-6">
+        <div class="section-6__title">
+            Hablan de nosotros
+        </div>
+        <div class="section-6__company-list">
+            <div class="section-6__company">
+                <img src="img/image-5.png" alt="company-1" width="100%">
+            </div>
+            <div class="section-6__company">
+                <img src="img/image-6.png" alt="company-2" width="100%">
+            </div>
+            <div class="section-6__company">
+                <img src="img/image-7.png" alt="company-3" width="100%">
+            </div>
+            <div class="section-6__company">
+                <img src="img/image-8.png" alt="company-4" width="100%">
+            </div>
+            <div class="section-6__company">
+                <img src="img/image-9.png" alt="company-5" width="100%">
+            </div>
+        </div>
+    </div>
+    <div class="section-7">
+        <div class="section-7__footer-row">
+            <div class="section-7__box-1">
+                <div class="section-7__subscribe">
+                    <div class="section-7__subscribe--title">
+                        Join our mailing list
+                    </div>
+                    <form name="subscribe" action="" onsubmit="return validateForm()" method="post"
+                        class="section-7__subscribe--form">
+                        <div class="input">
+                            <input type="email" placeholder="Enter Your Email" name="email-input">
+                            <span></span>
+                            <span class="alert"></span>
+                        </div>
+                        <input class="btn-primary" type="submit" value="SUBSCRIBE">
+                    </form>
+                    <div class="section-7__subscribe--message">
+                        By subscribing, i accept the terms & conditions.
+                    </div>
+                </div>
+                <div class="section-7__links">
+                    <div class="section-7__links-title">Useful links</div>
+                    <div class="section-7__links-list">
+                        <div class="section-7__links-item">FAQs</div>
+                        <div class="section-7__links-item">Refer to a friend</div>
+                        <div class="section-7__links-item">Contact us</div>
+                        <div class="section-7__links-item">Work With Us</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-7__box-2">
+                <div class="section-7__socials">
+                    <div class="section-7__socials--item">
+                        <img src="assets/instagram.svg" alt="instagram-icon">
+                    </div>
+                    <div class="section-7__socials--item">
+                        <img src="assets/facebook.svg" alt="facebook-icon">
+                    </div>
+                    <div class="section-7__socials--item">
+                        <img src="assets/twitter.svg" alt="twitter-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-7__footer-row">
+            <div class="section-7__footer-logo">
+                <img src="img/footer-logo.svg" alt="logo-footer" width="100%">
+            </div>
+        </div>
+        <div class="section-7__footer-row">
+            <div class="section-7__copyright">
+                Copyright @Nubba 2022
+            </div>
+            <div class="section-7__tnc">
+                <div class="section-7__tnc-item">
+                    Terms
+                </div>
+                <div class="section-7__tnc-item">
+                    Privacy policy
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
